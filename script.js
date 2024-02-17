@@ -12,4 +12,7 @@ const compareGuesses = (humanGuess, computerGuess, secretTarget) => {
     const humanResult = Math.abs(secretTarget - humanGuess);
     const computerResult = Math.abs(secretTarget - computerGuess);
     return humanResult <= computerResult ? true : false;
-  };
+};
+
+// Updates score for winning player
+const updateScore = winner => winner === 'computer' ? computerScore++ : humanScore++;

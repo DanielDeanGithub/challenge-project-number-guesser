@@ -16,3 +16,6 @@ const compareGuesses = (humanGuess, computerGuess, secretTarget) => {
 
 // Updates score for winning player
 const updateScore = winner => winner === 'computer' ? computerScore++ : humanScore++;
+
+// Increases game round number
+const advanceRound = () => currentRoundNumber++;

@@ -7,10 +7,13 @@ let currentRoundNumber = 1;
 // Returns a random integer between 0 and 9
 const generateTarget = () => Math.floor(Math.random() * 10);
 
+// Calculates absolute distance between two values
+const getAbsoluteDistance = (a, b) => Math.abs(a -b);
+
 // Compares guesses to see which player is closer
 const compareGuesses = (humanGuess, computerGuess, secretTarget) => {
-    const humanResult = Math.abs(secretTarget - humanGuess);
-    const computerResult = Math.abs(secretTarget - computerGuess);
+    const humanResult = getAbsoluteDistance(secretTarget, humanGuess);
+    const computerResult = getAbsoluteDistance(secretTarget, computerGuess);
     return humanResult <= computerResult ? true : false;
 };
 

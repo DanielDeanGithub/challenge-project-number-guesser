@@ -12,6 +12,7 @@ const getAbsoluteDistance = (a, b) => Math.abs(a -b);
 
 // Compares guesses to see which player is closer
 const compareGuesses = (humanGuess, computerGuess, secretTarget) => {
+    if (humanGuess < 0 || humanGuess > 9) return alert('Please enter a number between 0 and 9.');
     const humanResult = getAbsoluteDistance(secretTarget, humanGuess);
     const computerResult = getAbsoluteDistance(secretTarget, computerGuess);
     return humanResult <= computerResult ? true : false;

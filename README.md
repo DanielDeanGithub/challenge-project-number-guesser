@@ -1,8 +1,8 @@
+#### Objective provided by Codecademy
+
 ### BUILDING INTERACTIVE WEBSITES
 
 # Challenge Project: Number Guesser
-
-#### Objective provided by Codecademy:
 
 # Overview
 
